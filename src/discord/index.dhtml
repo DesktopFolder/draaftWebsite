@@ -1,0 +1,15 @@
+---
+page.title=Join the drAAft Discord Server!
+website.title=Discord Invite: drAAft
+page.description=Click this link to join the drAAft Discord server for tournament announcements, mod updates, and drAAft discussion!
+page.image=/assets/draaft_logo.png
+show-cards=true
+---
+<script>
+window.location.replace("https://discord.gg/PPWSyjZ9jz");
+</script>
+
+<noscript>
+As you have JavaScript disabled, you must click <a href="https://discord.gg/PPWSyjZ9jz">on this link</a> to be redirected to the Discord invite.
+</noscript>
+</body>

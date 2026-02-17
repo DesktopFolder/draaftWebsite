@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+}
+.item-logo {
+  grid-area: logo;
+  line-height: 87%;
+
+  padding: 5px;
+  font-size: 0.75em;
+
+  text-align: center;
+}
+.item-content {
+  padding: 5px;
+  grid-area: content;
+}
+.index-item-mcsr {
+  grid-area: mcsr;
+}
+.index-item-tools {
+  grid-area: tools;
+}
+.index-item-right {
+  grid-area: right-col;
+}
+.index-item-refs {
+  grid-area: refs;
+}
+
+.generic-sidebar {
+  text-align: center;
+  padding: 5px;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas: 
+        "logo content right-col"
+        "tools content right-col"
+        "mcsr content ."
+        "refs content ."
+        ". content ."
+        ". content ."
+        ". content ."
+        ". content .";
+}
+
+.video-embed {
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 1em;
+    padding-bottom: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 480px;
+    background-color: #f8f8ff;
+}
+
+.video-container p {
+    text-align: center;
+}
+
+.centerme {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+}
+
+.iframe-wrapper {
+    text-align: center;
+}
+
+.video-page-link, .video-embed {
+
+}
+
+#index-name-icons {
+    margin-top: -5px;
+}
+
+.index-item-right {
+    text-align: right;
+    padding-right: 30px;
+}
+
+/* MCSR */
+div#index-mcsr-bg {
+    /*
+    background-image: url("../assets/mcsr_logo.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    */
+    
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+div#index-mcsr-title {
+    backdrop-filter: brightness(140%);
+}
+
+div.generic-sidebar h2,h3 {
+    text-align: center;
+    margin: 0;
+    line-height: 0.9em;
+}
+
+.index-img {
+    margin-bottom: -27px;
+    max-height: 96px;
+}
+
+.generic-sidebar p {
+    margin: 0;
+    line-height: 1.6em;
+}
+
+.generic-sidebar {
+    margin-top: 30px;
+}
+
+
+/***** MEDIA QUERIES *****/
+@media (max-width: 1000px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+.container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo"
+        "tools"
+        "mcsr"
+        "content"
+        "content";
+}
+
+.item-logo {
+  font-size: 1.5em;
+}

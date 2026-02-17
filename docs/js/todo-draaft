@@ -1,0 +1,28 @@
+* add player head to current player
+* use full names for big pool
+* nesting of datapack zip files
+* prettify???
+* draft completion + gutter
+* fix weirdness
+* link repo
+
+- Minor Fixes:
+    - Prevent changing players once draft starts
+
+- Minor Usability Fixes:
+    - Display number of allowed picks remaining for pools (0..2/2)
+    - Display player name image on their picks instead of removing them?
+
+- Prettification:
+    - Add images to draaft pool
+    
+
+----------------------------
+--------- DRAAFT 2 ---------
+----------------------------
+
+- current drafting player
+- previous head (grayed out)
+- next up: player
+- following picks (heads) (yours... bigger? idk)
+- "Picking in 2..1..."

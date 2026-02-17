@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{page-title}</title>
+
+    <script type="module">
+        // As suggested by:
+        // https://www.matuzo.at/blog/html-boilerplate/
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    {meta}
+
+    <link rel="stylesheet" href="{path-css-common}">
+    {css-extras}
+    <link rel="stylesheet" href="/styles/index.css">
+    <!--<link rel="stylesheet" href="path/to/print.css" media="print">-->
+    <!-- maybe get pt sans-->
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <meta name="description" content="{page-description}" />
+    <meta property="og:title" content="{page-title}" />
+    <meta property="og:site_name" content="{website-title}" />
+    <meta property="og:description" content="{page-description}" />
+    <meta property="og:image" content="{page-image}" />
+
+    {favicon}
+</head>
+<style>
+</style>
+<!--
+So these pages are kind of dumb. In theory we just embed into the template.
+But the templates are probably going to be quite specialized.
+I guess at the end of the day it's not a huge deal and some copy/paste is expected.
+
+We are given /content/ from the pseudoHTML, which should be valid HTML. We
+just need to decorate the page around it.
+-->
+<div class="container">
+    <div class="item-logo">
+    <img src="drt_logo.svg" />
+    <p id="index-name-icons">DesktopFolder's Website
+{generators[strings][logos:github,youtube,twitch,twitter]}
+    </p>
+    </div>
+    <div class="index-item-mcsr generic-sidebar">
+        <img class="index-img" src="/assets/mcsr_logo.gif" />
+        <div id="index-mcsr-bg">
+        <div id="index-mcsr-title">
+            <h3>Minecraft Speedrunning</h3>
+        </div>
+        </div>
+{generators[tools][class-pages@mcsr][<p class="mcsr-page-link"><a href="$page:url">$page:name</a></p>]}
+    </div>
+    <div class="index-item-tools generic-sidebar">
+        <div id="index-tools-bg">
+        <div id="index-tools-title">
+            <h3>Tools</h3>
+        </div>
+        </div>
+{generators[tools][class-pages@tools][<p class="tool-page-link"><a href="$page:url">$page:name</a></p>]}
+<p class="tool-page-link"><a href="/draaft">drAAft</a></p>
+    </div>
+    <div class="index-item-refs generic-sidebar">
+        <div id="index-refs-bg">
+        <div id="index-refs-title">
+            <h3>Other Pages</h3>
+        </div>
+        </div>
+        <a href="https://sidneys1.github.io">Sidneys1's Blog</a>
+    </div>
+    <div class="item-content">
+{content}
+    </div>
+
+    <div class="index-item-right right-sidebar">
+{generators[tools][class-pages@right-things][<p class="right-page-link"><a href="$page:url">$page:name</a></p>]}
+    </div>
+</div>
+</html>

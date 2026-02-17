@@ -1,0 +1,9 @@
+---
+page.title=drAAft Documentation
+website.title=draaft.disrespec.tech
+page.description=Documentation for the drAAft mod.
+page.image=/draaft-logo.png
+---
+<body class="wider">
+{{generators[md][src/draaft/documentation.md]}}
+</body>
