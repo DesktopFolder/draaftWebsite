@@ -31,4 +31,4 @@
 
 ### Notes
 
-- To view the leaderboard, press `l` while within the [drAAft application](https://draaft.disrespec.tech).
+- To view the leaderboard, press `l` while within the [drAAft application](https://draaft.net).

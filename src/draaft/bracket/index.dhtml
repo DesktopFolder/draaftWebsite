@@ -1,6 +1,6 @@
 ---
 page.title=drAAft Bracket
-website.title=draaft.disrespec.tech
+website.title=draaft.net
 page.description=drAAft Tournament Bracket
 src=templates/bracket.html
 css.extras=/styles/draaft2.css

@@ -1,6 +1,6 @@
 ---
 page.title=drAAfting Tool
-website.title=draaft.disrespec.tech
+website.title=draaft.net
 page.description=A tool for doing AA drafts
 src=templates/generic.html
 css.extras=/styles/draaft2.css
