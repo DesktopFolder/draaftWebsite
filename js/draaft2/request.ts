@@ -5,7 +5,7 @@ export const LOCAL_TESTING: boolean =
     mapNotNull(localStorage.getItem("draaft.dev"), v => v === "true") ?? window.location.hostname === "localhost";
 
 export const API_URI = new URL(
-    localStorage.getItem("draaft.apiUri") ?? (LOCAL_TESTING ? "http://localhost:8000" : "https://api.disrespec.tech")
+    localStorage.getItem("draaft.apiUri") ?? (LOCAL_TESTING ? "http://localhost:8000" : "https://api.draaft.net")
 );
 
 export const WS_URI = urlWithProtocol(API_URI, API_URI.protocol === "http:" ? "ws:" : "wss:");

@@ -74,10 +74,10 @@ hyperlegible=true
         <div class="helper-buttons" id="menu-helper-buttons">
             <div class="menu-helper-row">
                 <a class="helper-button as-button basic-shadow" href="https://discord.gg/37Q3KnbeQQ" target="_blank">discord</a>
-                <a class="helper-button as-button basic-shadow" href="https://disrespec.tech/draaft/intro.html" target="_blank">help me!</a>
+                <a class="helper-button as-button basic-shadow" href="https://draaft.net/draaft/intro.html" target="_blank">help me!</a>
             </div>
             <div class="menu-helper-row">
-                <a class="helper-button as-button basic-shadow" href="https://disrespec.tech/draaft/old.html" target="_blank">old site</a>
+                <a class="helper-button as-button basic-shadow" href="https://draaft.net/draaft/old.html" target="_blank">old site</a>
                 <a class="helper-button as-button basic-shadow" href="https://twitter.com/DesktopFolder" target="_blank">twitter</a>
             </div>
         </div>

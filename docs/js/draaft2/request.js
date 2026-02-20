@@ -1,7 +1,7 @@
 import { reloadNotification, stored_token } from "./util.js";
 // Should not have to change any of these in production.
 export const LOCAL_TESTING = mapNotNull(localStorage.getItem("draaft.dev"), v => v === "true") ?? window.location.hostname === "localhost";
-export const API_URI = new URL(localStorage.getItem("draaft.apiUri") ?? (LOCAL_TESTING ? "http://localhost:8000" : "https://api.disrespec.tech"));
+export const API_URI = new URL(localStorage.getItem("draaft.apiUri") ?? (LOCAL_TESTING ? "http://localhost:8000" : "https://api.draaft.net"));
 export const WS_URI = urlWithProtocol(API_URI, API_URI.protocol === "http:" ? "ws:" : "wss:");
 export function request_headers() {
     return {
