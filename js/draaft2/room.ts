@@ -38,6 +38,8 @@ const ENABLECONFIGS = {
 
     admin_starts_game: "button",
 
+    fully_random: "button",
+
     // disable: doesn't do anything yet
     // countdown_timer: "number",
 };
